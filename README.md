@@ -1,5 +1,4 @@
-<img src="https://drive.google.com/uc?export=view&id=" width="1000">
-
+<img src="https://drive.google.com/uc?export=view&id=1KhgXrd0uwGaHQ58K9cdrWQHWzih-AV6J" width="1000">
 
 # Stack de Observabilidade para Microsserviços com OpenTelemetry
 
