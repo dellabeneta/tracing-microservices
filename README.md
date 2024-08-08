@@ -1,11 +1,5 @@
-# Tracing-Microservices
-Lab simples com base no https://www.youtube.com/watch?v=LGhrGg-CJ5Y
+<img src="https://drive.google.com/uc?export=view&id=" width="1000">
 
-<img src="https://drive.google.com/uc?export=view&id=1qZ6xzPhMtu9rLnuDCd3pWmxfm3Gc3JLM" width="1000">
-
-Aqui está o `README.md` traduzido para o português do Brasil:
-
----
 
 # Stack de Observabilidade para Microsserviços com OpenTelemetry
 
