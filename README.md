@@ -2,15 +2,6 @@
 Lab simples com base no https://www.youtube.com/watch?v=LGhrGg-CJ5Y
 
 
-Você fez o upload de três arquivos (`compose.yaml`, `Dockerfile`, e `otel-collector-config.yaml`). Para criar o `README.md`, vou precisar entender o propósito do seu projeto e como esses arquivos se relacionam com ele. Se você tiver algum arquivo Go ou quiser descrever a funcionalidade do projeto, isso ajudará a criar uma documentação mais precisa.
-
-Com base nos arquivos enviados, posso criar um esqueleto básico para o `README.md`. Se precisar de ajustes, podemos adicionar mais detalhes depois.
-
-Vou gerar o esqueleto agora:
-
----
-
-```markdown
 # Projeto Go com Docker
 
 Este projeto é uma aplicação Go containerizada usando Docker, com configuração adicional para o OpenTelemetry Collector.
