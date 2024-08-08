@@ -1,5 +1,6 @@
 <img src="https://drive.google.com/uc?export=view&id=1KhgXrd0uwGaHQ58K9cdrWQHWzih-AV6J" width="1000">
 
+
 # Stack de Observabilidade para Microsserviços com OpenTelemetry
 
 Este repositório demonstra uma configuração de uma stack de observabilidade para microsserviços usando Docker Compose. Inclui Jaeger, Zipkin, Prometheus e OpenTelemetry Collector para coleta de métricas e rastreamento. Além disso, três microsserviços de demonstração (`goapp`, `goapp2` e `goapp3`) são incluídos para simular uma aplicação distribuída.
@@ -22,14 +23,15 @@ Este repositório demonstra uma configuração de uma stack de observabilidade p
 
 - Docker
 - Docker Compose
+- **Go** (necessário para a construção dos microsserviços durante o build)
 
 ## Configuração
 
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seuusuario/seu-repo-nome.git
-   cd seu-repo-nome
+   git clone https://github.com/dellabeneta/tracing-microservices.git
+   cd tracing-microservices
    ```
 
 2. Certifique-se de que os arquivos de configuração do Prometheus e do OpenTelemetry Collector estão no lugar:
@@ -41,7 +43,7 @@ Este repositório demonstra uma configuração de uma stack de observabilidade p
 
 ### Jaeger
 
-- **Imagem**: `jaegertracing/all-in-one:latest`
+- **Imagem**: `jaegertracing/all-in-one:latest` - Aqui talvez você possa travar em uma release específica; seria uma boa prática.
 - **Portas**: 
   - `16686:16686` (Jaeger UI)
   - `14268` (Jaeger collector HTTP)
@@ -49,19 +51,19 @@ Este repositório demonstra uma configuração de uma stack de observabilidade p
 
 ### Zipkin
 
-- **Imagem**: `openzipkin/zipkin:latest`
+- **Imagem**: `openzipkin/zipkin:latest` - Aqui talvez você possa travar em uma release específica; seria uma boa prática.
 - **Portas**:
   - `9411:9411` (Zipkin UI e API)
 
 ### Prometheus
 
-- **Imagem**: `prom/prometheus:latest`
+- **Imagem**: `prom/prometheus:latest` - - Aqui talvez você possa travar em uma release específica; seria uma boa prática.
 - **Portas**: `9090:9090` (Prometheus UI)
 - **Configuração**: A configuração do Prometheus é montada a partir de `./.docker/prometheus.yaml`.
 
 ### OpenTelemetry Collector
 
-- **Imagem**: `otel/opentelemetry-collector:0.103.0`
+- **Imagem**: `otel/opentelemetry-collector:0.103.0` - Essa versão em especṕifico é requerida. 
 - **Portas**:
   - `1888:1888` (extensão pprof)
   - `8888:8888` (métricas Prometheus)
@@ -102,10 +104,10 @@ Esses microsserviços estão conectados à stack de observabilidade e se comunic
 Para iniciar toda a stack, basta executar:
 
 ```bash
-docker-compose up --build
+docker compose up -d 
 ```
 
-Este comando irá construir os microsserviços e iniciar todos os containers definidos no `docker-compose.yml`.
+Este comando irá construir os microsserviços e iniciar todos os containers definidos no `compose.yml`.
 
 ## Acessando os Serviços
 
@@ -123,4 +125,4 @@ Este projeto é licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE)
 
 ---
 
-Substitua `seuusuario` e `seu-repo-nome` pelas informações reais do seu repositório no GitHub. Se precisar de mais ajustes, estou à disposição!
+Lembre-se que você pode efetuar um fork do respositório e ter o projeto dentro do seu próprio Github, uma excelente prática.
