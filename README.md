@@ -47,12 +47,3 @@ Você pode personalizar o projeto editando os arquivos Go, Dockerfile, e as conf
 ## Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir um *issue* ou enviar um *pull request*.
-
-## Licença
-
-Este projeto está licenciado sob a Licença XYZ. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-```
-
----
-
-Esse é um exemplo básico. Caso você tenha alguma instrução específica, função principal do projeto, ou mais detalhes, posso incluir essas informações.
